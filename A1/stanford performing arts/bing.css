@@ -1,57 +1,8 @@
-@media screen and (max-width: 815px) {
-
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-
-
-        grid-template-areas: 
-        "title"
-        "image"
-        "calendar"
-        ;
-
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .bigtitle {
-        font-size: 32pt;
-    }
-
-    .gone::before {
-        content: " ";
-    }
-
-    .gone{
-        display: none;
-    }
-
-    .aut::before{
-        content:  "\a" "\a" "\a" " ";
-        white-space: pre;
-    }
-
-    .aut {
-        float: left;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-
-    img {
-        width: calc(100% - 10px);
-    }
-
-    .bigtitle {
-        font-size: 28pt;
-    }
-}
 
 .container {
 	display: grid;
 	grid-template-columns: 500px 315px;
+    /* because there is a margin i used 315 (since in total it should be 815) */
 	grid-template-rows: auto;
 	overflow: hidden;
     margin-left: calc((100% - 815px) / 2);
@@ -64,21 +15,15 @@
     ;
 }
 
-div {
-    border: black 1px solid;
-}
-
 #article2 {
     margin-bottom: 20px;
     margin-top: 5px;
-
     grid-area: title;
 
     /* Title */
 }
 #article3 {
 	margin-right: 15px;
-
     grid-area: image;
     
     /* image */
@@ -116,12 +61,10 @@ img {
     color: #cc0000;
     font-size: 12pt;
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-right: 0;
 }
-.right{
-    float: right;
-}
+
 .line-1 {
     border: 1px solid black;
 	border-style: solid none none none;
@@ -137,4 +80,60 @@ img {
 
 .lastcalline {
     border-style: solid none solid none;
+}
+
+.right {
+    float: right;
+}
+
+
+@media screen and (max-width: 815px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+
+        grid-template-areas: 
+        "title"
+        "image"
+        "calendar"
+        ;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bigtitle {
+        font-size: 32pt;
+        float: left;
+        width: 100%;
+    }
+
+    .gone{
+        display: none;
+    }
+
+    #article4 {
+        margin-top: 10px;
+    }
+
+    .aut {
+        float: left;
+    }
+
+    .right {
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    img {
+        width: calc(100% - 10px);
+    }
+
+    .bigtitle {
+        font-size: 28pt;
+    }
 }
