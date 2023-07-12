@@ -1,0 +1,140 @@
+@media screen and (max-width: 815px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+
+        grid-template-areas: 
+        "title"
+        "image"
+        "calendar"
+        ;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bigtitle {
+        font-size: 32pt;
+    }
+
+    .gone::before {
+        content: " ";
+    }
+
+    .gone{
+        display: none;
+    }
+
+    .aut::before{
+        content:  "\a" "\a" "\a" " ";
+        white-space: pre;
+    }
+
+    .aut {
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    img {
+        width: calc(100% - 10px);
+    }
+
+    .bigtitle {
+        font-size: 28pt;
+    }
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 500px 315px;
+	grid-template-rows: auto;
+	overflow: hidden;
+    margin-left: calc((100% - 815px) / 2);
+    margin-right: calc((100% - 815px) / 2);
+    line-height: 1;
+
+    grid-template-areas: 
+    "title title"
+    "image calendar"
+    ;
+}
+
+div {
+    border: black 1px solid;
+}
+
+#article2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+    grid-area: title;
+
+    /* Title */
+}
+#article3 {
+	margin-right: 15px;
+
+    grid-area: image;
+    
+    /* image */
+}
+#article4 {
+    /* calendar */
+    line-height: 1.4;
+    grid-area: calendar;
+}
+
+.bigtitle {
+    color: #cc0000;
+    font-size: 36pt;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+img {
+    float: left;
+    margin-right: 10px;
+    height: 190px;
+    width: 315px;
+}
+.bingtitle{
+    font-size: 18pt;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.calendartitle{
+    font-size: 14pt;
+    font-weight: 700;
+    font-family: sans-serif;  
+}
+.aut {
+    float: right;
+    color: #cc0000;
+    font-size: 12pt;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-right: 0;
+}
+.right{
+    float: right;
+}
+.line-1 {
+    border: 1px solid black;
+	border-style: solid none none none;
+    font-size: 12pt;
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.lastcalline {
+    border-style: solid none solid none;
+}

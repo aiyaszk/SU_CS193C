@@ -1,0 +1,28 @@
+#imageid {
+    height: 237px;
+    width: 169px;
+    float: left;
+    border-width: 5px;
+    border-color: royalblue;
+    border-style: solid;
+    padding: 3px;
+    margin: 15px;
+}
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid green;
+  }
+
+a:hover {
+    color: rgb(139, 46, 46);
+}
+
+.stanford {
+    font-weight: bold ;
+    color: red;
+}
