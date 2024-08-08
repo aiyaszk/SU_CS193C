@@ -1,0 +1,48 @@
+#caption {
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #008800;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0px;
+	width: 800px;
+}
+
+#photoSection {
+	height: 600px;
+	width: 800px;
+	position: absolute;
+}
+
+#photo {
+	position: absolute;
+}
+
+#forwardOverlay {
+	position: absolute;
+	width: 400px;
+	height: 600px;
+	right: 0px;
+	/* background-color: black; */
+}
+
+/* #forwardOverlay:hover {
+	background-color: royalblue;
+	opacity: 0.3;
+}
+
+#backwardOverlay:hover {
+	background-color: royalblue;
+	opacity: 0.3;
+} */
+
+#backwardOverlay {
+	position: absolute;
+	width: 400px;
+	height: 600px;
+	left: 0px;
+	/* background-color: red; */
+}

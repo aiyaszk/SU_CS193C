@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Map</title>
+<link rel="stylesheet" href="map.css">
+<script src="map.js" defer></script>
+</head>
+<body>
+    <div id="mapSection">
+        <div id="centerLineX"></div>
+        <div id="centerLineY"></div>
+        <img id="map" draggable="false" src="map-s.gif" alt="stanfordmap">
+
+        <div id="controls">
+
+            <div id="zoom">
+                <input type="button" value="+" onclick="inzoom()"> <input id="bb" type="button" value="-" onclick="dezoom()">
+            </div>
+
+            <div id="up">
+                <input type="button" value="^" onclick="up()">
+            </div>
+
+            <div id="leftright">
+                <input type="button" value="&lt;" onclick="left()"><input id="ab" type="button" value="&gt;" onclick="right()">
+            </div>
+
+            <div id="down">
+                <input type="button" value="v" onclick="down()">
+            </div>
+
+        </div>
+
+        <div id="Search">
+            <input type="text" name="searchText" id="searchText">
+            <input type="button" value="Search" id="searchButton">
+        </div>
+    </div>
+</body>
+</html>

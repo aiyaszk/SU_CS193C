@@ -1,0 +1,187 @@
+div {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    margin-top: 0;
+    padding-top: 0;
+    border-collapse: collapse;
+    height: 220px;
+}
+
+thead {
+    background: #484848;
+    color: white;
+    border: solid gray 1px;
+    border-style: solid solid none solid;
+    border-top: solid gray 2px;
+    line-height: 1.6;
+    border-right: solid #696969 3px;
+}
+
+tr {
+    height: 20px;
+    line-height: 1.6;
+}
+
+
+/*https://www.w3docs.com/snippets/css/how-to-limit-border-length-with-css.html
+/* tr.right:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50%;
+    border-right: 3px solid #000;
+} */
+
+.pad {
+    padding-left: 10px;
+}
+
+.col1, .col2 {
+    border: solid gray 2px;
+    border-style: none solid none none;
+}
+
+.col3 {
+    border: solid gray 1px;
+    border-style: none solid none none;
+}
+
+tbody, #rightttable {
+    border: solid gray 1px;
+    border-style: none solid solid solid;
+    border-right: solid #696969 3px;
+    border-bottom: solid gray 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+h1 {
+    grid-area: title;
+}
+
+#lefttable {
+    grid-area: lefttable;
+    width: 420px;
+}
+
+#rightttable {
+    grid-area: righttable;
+    width: 270px;
+    margin-left: 50px;
+}
+
+#updates {
+    grid-area: update;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 420px 300px;
+    grid-template-rows: auto 200px;
+    
+    grid-template-areas: 
+    "title title"
+    "lefttable righttable"
+    "lefttable update"
+    ;
+
+    font-family: sans-serif;
+    line-height:1;
+}
+
+span {
+    font-size: 8pt;
+    padding: 0;
+    margin: 0;
+}
+
+#search {
+    grid-area: search;
+    background: #484848;
+    color: white;
+    border: solid gray 1px;
+    border-style: solid solid none solid;
+    border-top: solid gray 2px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 0px;
+}
+
+#radio {
+    grid-area: radio;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#textmaxtui {
+    grid-area: textmaxtui;
+    padding-left: 7px;
+    padding-bottom: 17px;
+}
+
+#inputmaxtui {
+    grid-area: inputmaxtui;
+    padding-left: 0px;
+    padding-bottom: 17px;
+}
+
+#textmaxsat {
+    grid-area: textmaxsat;
+    padding-left: 7px;
+    padding-bottom: 17px;
+}
+
+#inputmaxsat {
+    grid-area: inputmaxsat;
+    padding-left: 0px;
+    padding-bottom: 17px;
+}
+
+#textminsat {
+    grid-area: textminsat;
+    padding-left: 7px;
+    padding-bottom: 17px;
+}
+
+#inputminsat {
+    grid-area: inputminsat;
+    padding-left: 0px;
+    padding-bottom: 17px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-template-rows: auto;
+    
+    grid-template-areas: 
+    "search search"
+    "radio radio"
+    "textmaxtui inputmaxtui"
+    "textmaxsat inputmaxsat"
+    "textminsat inputminsat"
+    ;
+
+    font-family: sans-serif;
+
+    line-height:1;
+}
+
+input[type=submit] {
+    border: blue solid 1px;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+}

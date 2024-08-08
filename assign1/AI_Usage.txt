@@ -1,0 +1,14 @@
+1
+
+Asked AI general questions about concepts related to the assignment. But
+did not ask about the assignment itself (e.g., asked AI about how grid-based
+CSS layout works, but did not ask it to generate code specific to the
+assignment).
+
+I only used chatgpt for how to utilize this function.
+    tr:nth-child(even) {
+        background-color: #EEE;
+    }
+I was not sure how to utilize it. Therefore I asked to write it with even lines.
+
+I used w3schools website to learn new concepts except for the specific function above.

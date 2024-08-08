@@ -1,0 +1,5 @@
+2
+
+AI provided a small amount of assistance in debugging and a small part of code
+
+smoothMovement in map was AI generated

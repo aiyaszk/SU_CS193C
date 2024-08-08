@@ -1,0 +1,46 @@
+2
+
+AI provided a small amount of assistance in debugging
+
+I only used AI because for some reason my clear.png was not getting detected the source of the image. 
+My AI prompt
+""
+if(acard.src=='clear.png') {
+        console.log("notclear");
+        return "notclear";
+    }
+
+is not working why
+
+when i write it like this
+
+if(acard.src=='file:///Users/alyakurt/Desktop/cs193c/assignments/assign3/matching/clear.png') {
+        console.log("notclear");
+    }
+
+it works but i don't want this
+
+""
+
+
+AI answer
+
+""
+Use Relative File Path:
+Instead of the full file path, use the relative file path to 'clear.png' in your code. This way, the code will work as long as the image is in the same directory as the HTML file or in a subdirectory relative to the HTML file.
+For example, if the 'clear.png' image is in the same directory as your HTML file, you can do:
+
+javascript
+Copy code
+if (acard.src.includes('clear.png')) { //I used this
+    console.log("notclear");
+}
+Check the Image Filename:
+If the image filename is always 'clear.png', you can check the last part of the src attribute, which should contain the image filename.
+javascript
+Copy code
+if (acard.src.endsWith('clear.png')) {
+    console.log("notclear");
+}
+Using either of these methods will make your code more flexible and independent of the absolute file path, and it will work even if the project is moved to a different location or server.
+""

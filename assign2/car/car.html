@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Configure Your GT Super Sportscar</title>
+<link rel="stylesheet" href="car.css">
+<script src="car.js" defer></script>
+</head>
+<body>
+    <div class="container"> 
+    <div id="title">
+        <h1>Configure Your GT Super Sportscar</h1>
+    </div>
+
+    <div id="form">
+        <form id="cars">
+       
+     <fieldset>
+        <p class="tabletitle"> <span></span>
+            <span>C</span>onfiguration
+           </p>
+       <table>
+           <tr>
+             <td><input name="config" id="manual" type="radio" size="25" />GT Manual</td>
+             <td class="pad">$17,790.00</td>
+            </tr>
+            <tr>
+             <td><input name="config" id="auto" type="radio" size="25" />GT Automatic</td>
+             <td class="pad">$18,590.00</td>
+            </tr>
+            <tr>
+             <td><input name="config" id="sm" type="radio" size="25" />GT-S Manual</td>
+             <td class="pad">$22,455.00</td>
+            </tr>
+            <tr>
+             <td><input name="config" id="sport" type="radio" size="25" />GT-S Sportshift</td>
+             <td class="pad">$23,155.00</td>
+            </tr>
+       </table>
+     </fieldset>
+<br>
+     <fieldset>
+        <p class="tabletitle"> <span></span>
+            <span>F</span>actory <span>O</span>ptions
+           </p>
+        <table>
+            <tr>
+              <td><input name="options" id="option1" type="radio" size="25" />Option Combo #1</td>
+              <td class="pad1">$1235.00</td>
+             </tr>
+             <tr>
+                 <td class="specialpad"><ul><li>Power Windows, Doors, Cruise Control</li></ul></td>
+             </tr>
+             <tr>
+              <td><input name="options" id="option2" type="radio" size="25" />Option Combo #2</td>
+              <td class="pad1">$3354.00</td>
+             </tr>
+             <tr>
+                <td class="specialpad"><ul><li>Rear Spoiler and Fog Lamps</li></ul></td>
+            </tr>
+            <tr>
+                <td class="specialpad"><ul><li>Keyless Entry</li></ul></td>
+            </tr>
+            <tr>
+                <td class="specialpad"><ul><li>Power Tilt & Slide Moonroof</li></ul></td>
+            </tr>
+            <tr>
+                <td class="specialpad"><ul><li>Power Windows, Doors, Cruise Control</li></ul></td>
+            </tr>
+             <tr>
+              <td><input name="options" id="no" type="radio" size="25" />No Combo</td>
+              <td class="zeropad">$0</td>
+             </tr>
+        </table>
+      </fieldset>
+<br>
+      <fieldset>
+        <p class="tabletitle"> <span></span>
+            <span>D</span>ealer <span>O</span>ptions
+            </p>
+        <table>
+            <tr>
+              <td><input name="Stereo" id="Stereo" type="checkbox" size="25" />Upgraded Stereo System</td>
+              <td class="pad2">$550.00</td>
+             </tr>
+             <tr>
+              <td><input name="VIP" id="VIP" type="checkbox" size="25" />VIP Security System</td>
+              <td class="pad2">$399.00</td>
+             </tr>
+             <tr>
+              <td><input name="Mirror" id="Mirror" type="checkbox" size="25" />Auto-Dimming Mirror </td>
+              <td class="pad2">$295.00</td>
+             </tr>
+        </table>
+      </fieldset>
+<br>
+     <fieldset>
+        <p class="tabletitle toppad"> <span></span>
+            <span>T</span>otal <span>P</span>rice
+        </p>
+          <table>
+            <tr>
+              <td><input type="text" size="20" name="total" /></td>
+              <td class="pad3"><input name="caltotal" id="caltotal" value="Calculate Total" type="button" /></td>
+             </tr>
+        </table>
+     </fieldset>
+    </form>
+    </div>
+
+    <div id="car">
+        <fieldset>
+            <p class="tabletitle toppad"> <span></span>
+                <span>C</span>hoose <span>A</span> <span>C</span>olor
+                </p>
+            <div>
+                    <select id="mySelect">
+                        <option value="Red" id="redButton">Red</option>
+                        <option value="blue" id="blueButton">Blue</option>
+                        <option value="silver" id="silverButton">Silver</option>
+                        <option value="White" id="whiteButton">White</option>
+                        <option value="black" id="blackButton">Black</option>
+                    </select>
+                    <img id="photo" src="red.jpg" alt="Car Photo" />
+            </div>
+          </fieldset>
+    </div>
+
+    </div>
+</body>
+</html>

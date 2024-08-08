@@ -1,0 +1,15 @@
+2
+
+AI provided a small amount of assistance in debugging
+
+I only used AI in this case.
+My initial thought on this function was 
+
+window.setTimeout = (
+        () => {
+            document.getElementById("textField").style.backgroundColor = "red";
+            document.getElementById("warning").style.display = "inline";
+        }
+        ,3000);
+
+which was not working, AI pointed out the equal sign that shouldn't be there.

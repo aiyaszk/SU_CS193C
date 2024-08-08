@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Bay Area Colleges and Universities</title>
+<link rel="stylesheet" href="colleges.css">
+<script src="colleges.js" defer></script>
+</head>
+<body>
+    <h1>Bay Area Colleges and Universities</h1>
+    <table id="lefttable">
+        <colgroup>
+            <col class="col1" style="width: 40%;">
+            <col class="col2" style="width: 20%;">
+            <col class="col3" style="width: 20%;">
+            <col class="col4" style="width: 20%;">
+          </colgroup>
+        <thead>
+            <tr>
+                <th class="right">Name</th>
+                <th>SAT High</th>
+                <th>SAT Low</th>
+                <th>Tuition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="stanford">
+                <td class="right pad">Stanford</td>
+                <td class="pad">1570</td>
+                <td class="pad">1380</td>
+                <td class="pad">44757</td>
+            </tr>
+
+            <tr id="berkeley">
+                <td class="right pad">UC Berkeley</td>
+                <td class="pad">1500</td>
+                <td class="pad">1250</td>
+                <td class="pad">13844</td>
+            </tr>
+
+            <tr id="santacruz">
+                <td class="right pad">UC Santa Cruz</td>
+                <td class="pad">1280</td>
+                <td class="pad">1000</td>
+                <td class="pad">13398</td>
+            </tr>
+
+            <tr id=SFSU>
+                <td class="right pad">SFSU</td>
+                <td class="pad">1110</td>
+                <td class="pad">880</td>
+                <td class="pad">6468</td>
+            </tr>
+
+            <tr id=SJSU>
+                <td class="right pad">SJSU</td>
+                <td class="pad">1160</td>
+                <td class="pad">880</td>
+                <td class="pad">9496</td>
+            </tr>
+
+            <tr id=sonoma>
+                <td class="right pad">Sonoma State</td>
+                <td class="pad">1090</td>
+                <td class="pad">880</td>
+                <td class="pad">7276</td>
+            </tr>
+
+            <tr id=CalState>
+                <td class="right pad">CalState East Bay</td>
+                <td class="pad">1010</td>
+                <td class="pad">800</td>
+                <td class="pad">6550</td>
+            </tr>
+
+            <tr id=USF>
+                <td class="right pad">USF</td>
+                <td class="pad">1270</td>
+                <td class="pad">1070</td>
+                <td class="pad">41450</td>
+            </tr>
+
+            <tr id="SCU">
+                <td class="right pad">SCU</td>
+                <td class="pad">1380</td>
+                <td class="pad">1190</td>
+                <td class="pad">43812</td>
+            </tr>
+
+            <tr id="mills">
+                <td class="right pad">Mills College</td>
+                <td class="pad">1250</td>
+                <td class="pad">1040</td>
+                <td class="pad">42918</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="rightttable" class="container">
+
+    <div id="search">
+        Search Criteria
+    </div>
+
+    <div id="radio">
+        <input type="radio" name="chose" id="public" />Public 
+        <input type="radio" name="chose" id="private"/>Private
+        <input type="radio" name="chose" id="dontcare"/>Don't Care
+    </div>
+
+    <div id="textmaxtui">
+        Maximum Tuition<br><span>leave blank for don't care</span>
+    </div>
+    
+    <div id="inputmaxtui">
+        <input type="text" name="maxtui" id="maxtui" size="10">
+    </div>
+
+    <div id="textmaxsat">
+        Maximum High SAT<br><span>leave blank for don't care</span>
+    </div>
+    
+    <div id="inputmaxsat">
+        <input type="text" name="maxsat" id="maxsat" size="10">
+    </div>
+
+    <div id="textminsat">
+        Minimum Low SAT<br><span>leave blank for don't care</span>
+    </div>
+    
+    <div id="inputminsat">
+        <input type="text" name="minsat" id="minsat" size="10">
+    </div>
+
+    </div>
+
+    <div id="updates">
+        <input type="submit" value="Update" id="update">
+    </div>
+
+</body>
+</html>
